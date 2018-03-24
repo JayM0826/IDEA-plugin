@@ -17,7 +17,7 @@
 * LiveEdit
 * NodeJS
 * Scala
-* stackoverfolw
+* stackoverflow
 * activate-power-mode
 * backgroundImagePlus
 * GsonFormat
