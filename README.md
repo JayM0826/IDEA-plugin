@@ -1,6 +1,6 @@
 # IDEA-plugin
 
-该仓库为 IDEA 插件仓库，可以下载下来，然后放进 C:\Users\用户名\.IntelliJIdea2017.3\config\plugins (默认路径)即可。
+该仓库为 IDEA 插件仓库，可以下载下来，然后放进 C:\Users\用户名\\.IntelliJIdea2017.3\config\plugins (默认路径)即可。
 
 * AceJump
 * Alibaba Java Coding Guidelines
