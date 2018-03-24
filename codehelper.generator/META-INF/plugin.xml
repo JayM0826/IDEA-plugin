@@ -1,0 +1,96 @@
+<idea-plugin version="2">
+  <id>com.ccnode.codegenerator.mybatis.generator</id>
+  <name>codehelper.generator</name>
+  <version>2017.12.09</version>
+  <vendor email="zhengjunbase@gmail.com" url="http://www.codehelper.me/generator">CodeHelper</vendor>
+  <description>
+      &lt;div&gt;
+      &lt;p&gt;&lt;a href="https://github.com/zhengjunbase/codehelper.generator"&gt;GitHub&lt;/a&gt;
+      |&amp;nbsp&lt;a href="https://github.com/zhengjunbase/codehelper.generator/issues"&gt;Issues&lt;/a&gt;&lt;/p&gt;
+
+      &lt;p&gt;An Generator, generate code more easily and productive.&lt;/p&gt;
+      &lt;p&gt;GenAllSetter Features&lt;/p&gt;
+      &lt;ul&gt;
+      &lt;li&gt;&lt;p&gt;Auto gen all Setter method(method start with set) when you click AutoCoding btn(support shortcut).&lt;/p&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;p&gt;Auto gen all Setter method with default value when you click AutoCoding btn twice.&lt;/p&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+       &lt;p&gt;GenAllSetter Usage&lt;/p&gt;
+      &lt;ul&gt;
+      &lt;li&gt;&lt;p&gt;Click main menu Tools-&gt; Codehelper-&gt; GenAllSetter button to generate the code&lt;/p&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;p&gt;GenDaoCode Features&lt;/p&gt;
+      &lt;ul&gt;
+      &lt;li&gt;&lt;p&gt;Generate dao, service, sql and mybatis xml file according to pojo by one click.&lt;/p&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;p&gt;Update sql, mybatis xml file elegantly when the pojo file updated by one click.&lt;/p&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;p&gt;Provide insert, insertList, select, update and delete method.&lt;/p&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;p&gt;You can generate for multi pojo by once click.&lt;/p&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;p&gt;Recognize comment of pojo fields automatically and add as sql comment.&lt;/p&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;p&gt;Support rich config by config file, and use default config for no config file.&lt;/p&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;p&gt;Shortcut for generate.&lt;/p&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;p&gt;Support java + MySQL and later will support more DB.&lt;/p&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href="https://github.com/zhengjunbase/codehelper.generator"&gt;code at GitHub&lt;/a&gt; to learn more.&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;p&gt;GenDaoCode Usages&lt;/p&gt;
+      &lt;ul&gt;
+      &lt;li&gt;Click main menu Tools-&gt; Codehelper-&gt; GenDaoCode button to generate the code.&lt;/li&gt;
+      &lt;li&gt;Method One: Click GenDaoCode, and then enter the Pojo name in prompt box,&lt;/br&gt; multiple Pojo separated by | ,
+      CodeHelper will generate code use default config.&lt;/li&gt;
+      &lt;li&gt;Method two: Add a codehelper.properties in you project directory.&lt;/br&gt;Click GenDaoCode and Codehelper Generator will generates code for you based on codehelper.properties file.&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;p&gt;&lt;strong&gt;GenAllSetter 特性&lt;/strong&gt;&lt;/p&gt;
+      &lt;ul&gt;
+      &lt;li&gt;在Java方法中, 根据 &lt;code&gt;new&lt;/code&gt; 关键词, 为Java Bean 生成所有Setter方法。&lt;/li&gt;
+      &lt;li&gt;按GenAllSetter键两次, 会为Setter方法生成默认值。&lt;/li&gt;
+      &lt;li&gt;可在&lt;code&gt;Intellij Idea&lt;/code&gt;中为&lt;code&gt;GenAllSetter&lt;/code&gt;设置快捷键。&lt;/li&gt;
+      &lt;li&gt;如何使用:
+      &lt;ul&gt;
+      &lt;li&gt;将光标移动到 &lt;code&gt;new&lt;/code&gt; 语句的下一行。&lt;/li&gt;
+      &lt;li&gt;点击主菜单Tools-&amp;gt; Codehelper-&amp;gt; GenAllSetter, 或者按下&lt;code&gt;GenAllSetter&lt;/code&gt;快捷键。&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;p&gt;GenDaoCode 特性&lt;/p&gt;
+      &lt;ul&gt;
+      &lt;li&gt;&lt;p&gt;根据Pojo 文件一键生成 Dao，Service，Xml，Sql文件。&lt;/p&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;p&gt;Pojo文件更新后一键更新对应的Sql和mybatis xml文件。&lt;/p&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;p&gt;提供insert，insertList，update，select，delete五种方法。&lt;/p&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;p&gt;能够批量生成多个Pojo的对应的文件。&lt;/p&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;p&gt;自动将pojo的注释添加到对应的Sql文件的注释中。 &lt;/p&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;p&gt;丰富的配置，如果没有配置文件，则会使用默认配置。&lt;/p&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;p&gt;可以在Intellij Idea中快捷键配置中配置快捷键。&lt;/p&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;p&gt;目前支持MySQL + Java，后续会支持更多的DB。&lt;/p&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;p&gt;如果喜欢我们的插件，非常感谢您的分享。&lt;/p&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;p&gt;GenDaoCode 使用方法&lt;/p&gt;
+      &lt;ul&gt;
+      &lt;li&gt;&lt;p&gt;主菜单Tools-&gt; Codehelper-&gt; GenDaoCode 按键便可生成代码。&lt;/p&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;p&gt;方法一：点击GenDaoCode，然后根据提示框输入Pojo名字，多个Pojo以 | 分隔。&lt;/p&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;p&gt;Codehelper Generator会根据默认配置为您生成代码。&lt;/p&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;p&gt;方法二：在工程目录下添加文件名为codehelper.properties的文件。&lt;/p&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;p&gt;点击GenDaoCode，Codehelper Generator会根据您的配置文件为您生成代码&lt;/p&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;p&gt;如何配置: https://github.com/zhengjunbase/codehelper.generator&lt;/p&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+      &lt;p&gt;联系作者 &amp; 加入开发&lt;/p&gt;
+      &lt;ul&gt;
+       &lt;li&gt;&lt;p&gt; QQ群: 322824200 &lt;/p&gt;&lt;/li&gt;
+       &lt;/ul&gt;
+      &lt;/div&gt;
+    </description>
+  <change-notes>
+       improve stability.
+    
+  </change-notes>
+  <actions>
+    <group id="com.ccnode.codegenerator.mybatis.generator" text="CodeHelper" description="Generator" popup="true">
+      <separator/>
+      <group id="TestActionSubGroup"/>
+      <add-to-group group-id="ToolsMenu" relative-to-action="GenerateJavadoc" anchor="before"/>
+      <action id="mybatis.AutoCoding" class="com.ccnode.codegenerator.view.AutoCodingAction" text="GenAllSetter" description="GenAllSetter"/>
+      <action id="mybatis.genMybatisCode" class="com.ccnode.codegenerator.view.GenCodeAction" text="GenDaoCode" description="GenMybatisCode"/>
+      <action id="mybatis.LearnMore" class="com.ccnode.codegenerator.view.ShowLearnMoreAction" text="Learn More" description="Learn_More"/>
+    </group>
+  </actions>
+  <idea-version since-build="141.0"/>
+  <extensions defaultExtensionNs="com.intellij">
+    <applicationService serviceInterface="com.ccnode.codegenerator.storage.SettingService" serviceImplementation="com.ccnode.codegenerator.storage.SettingService"/>
+  </extensions>
+  <actions/>
+</idea-plugin>
